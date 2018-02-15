@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="es.unizar.disco.cycrisec.profile.feature"
-      label="DICE Profile"
+      label="CyCriSec Profile"
       version="0.1.0.qualifier"
       provider-name="DisCo - Unizar">
 
-   <description url="https://github.com/dice-project/DICE-Profiles">
-      DICE Profile for the DICE Project
+   <description url="https://github.com/cycrisec-project/CyCriSec-Profile">
+      CyCriSec Profile for the CyCriSec Project
    </description>
 
-   <copyright url="https://github.com/dice-project/DICE-Profiles">
+   <copyright url="https://github.com/cycrisec-project/CyCriSec-Profile">
       DisCo Group - Universidad de Zaragoza
    </copyright>
 
@@ -220,7 +220,7 @@ any resulting litigation.
    </license>
 
    <url>
-      <update url="http://dice-project.github.io/DICE-Profiles/updates"/>
+      <update url="http://cycrisec-project.github.io/CyCriSec-Profile/updates"/>
    </url>
 
    <requires>

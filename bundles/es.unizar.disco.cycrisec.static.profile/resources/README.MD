@@ -1,14 +1,14 @@
-# DICE Profile - Generation notes 
+# CyCriSec Profile - Generation notes 
 
-The DICE profile relies on MARTE and DAM.
-As the MARTE profile does, most of the datatypes defined in DICE are handled as `Strings` in the low-level Ecore metamodel.
-Datatypes are conceptually defined in the `DICE_Library.uml` model.
-The file `DICE_Library.ecore` defines the actual datatypes (i.e., `Strings` or `EClasses` depending on the case).
+The CyCriSec profile relies on MARTE and CIP_VAM.
+As the MARTE profile does, most of the datatypes defined in CyCriSec are handled as `Strings` in the low-level Ecore metamodel.
+Datatypes are conceptually defined in the `CipVamLibrary.uml` model.
+The file `CipVamLibrary.ecore` defines the actual datatypes (i.e., `Strings` or `EClasses` depending on the case).
 
-Using the normal *UML2Ecore* transformation, complex datatypes (such as those defined in MARTE/DAM/DICE) are transformed to *EClasses* with *EAttributes*; and UML properties declared with these types are transformed to containment *EReferences*.
+Using the normal *UML2Ecore* transformation, complex datatypes (such as those defined in MARTE/CIP_VAM/CyCriSec) are transformed to *EClasses* with *EAttributes*; and UML properties declared with these types are transformed to containment *EReferences*.
 However, MARTE overrides this representation.
-In this implementation of the DICE profile, basic *DataTypes* (that inherit from MARTE/DAM) have been implemented as *PrimitiveTypes* with the prototype *EDataType*. So that, the *instanceClassName* can be set to `java.lang.String`.
-This avoids creating the datatypes as `Strings` manually in the `DICE_Library.ecore` file.
+In this implementation of the CyCriSec profile, basic *DataTypes* (that inherit from MARTE) have been implemented as *PrimitiveTypes* with the prototype *EDataType*. So that, the *instanceClassName* can be set to `java.lang.String`.
+This avoids creating the datatypes as `Strings` manually in the `CyCriSec_Library.ecore` file.
 
 The *UML2Ecore* transformation requires modifications in the `org.eclipse.uml2.uml` plugin to generate a valid Ecore file (see http://dev.eclipse.org/mhonarc/lists/mdt-papyrus.dev/msg01269.html, http://dev.eclipse.org/mhonarc/lists/mdt-papyrus.dev/msg01253.html)
 
@@ -47,7 +47,7 @@ Other types of properties are converted into containment `EReferences`:
 		return false;
 	}
     
-Additionally, for the generation of the classes `es.unizar.disco.cycrisec.DICE.DICEFactory` and `es.unizar.disco.cycrisec.DICE.DICEPackage`, a dummy enumeration has been manually added in `DICE.ecore`.
-These classes (`DICEFactory`and `DICEPackage`) are needed to register the DICE profile in the extension points used in `plugin.xml`.
+Additionally, for the generation of the classes `es.unizar.disco.cycrisec.CyCriSec.CyCriSecFactory` and `es.unizar.disco.cycrisec.CyCriSec.CyCriSecPackage`, a dummy enumeration has been manually added in `CyCriSec.ecore`.
+These classes (`CyCriSecFactory`and `CyCriSecPackage`) are needed to register the CyCriSec profile in the extension points used in `plugin.xml`.
 
-Finally, to avoid compilation errors in the generation of the Java code for the profile it is necessary to disable the generation of *EOperations* (i.e. set `Operation Reflection` to `false` in DICE.genmodel).
+Finally, to avoid compilation errors in the generation of the Java code for the profile it is necessary to disable the generation of *EOperations* (i.e. set `Operation Reflection` to `false` in CyCriSec.genmodel).
