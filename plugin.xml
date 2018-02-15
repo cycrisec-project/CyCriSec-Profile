@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CIP_VAM -->
+      <package
+            uri="http:///CipVamprofile.ecore"
+            class="CipVamprofile.CipVamprofilePackage"
+            genModel="bundles/es.unizar.disco.cycrisec.static.profile/resources/CipVamprofile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CIP_VAM -->
+      <package
+            uri="http:///CipVamprofile/CipVamLibrary/BasicDT.ecore"
+            class="CipVamprofile.CipVamLibrary.BasicDT.BasicDTPackage"
+            genModel="bundles/es.unizar.disco.cycrisec.static.profile/resources/CipVamprofile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CIP_VAM -->
+      <package
+            uri="http:///CipVamprofile/CipVamLibrary/GeometricDT.ecore"
+            class="CipVamprofile.CipVamLibrary.GeometricDT.GeometricDTPackage"
+            genModel="bundles/es.unizar.disco.cycrisec.static.profile/resources/CipVamprofile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CIP_VAM -->
+      <package
+            uri="http:///CipVamprofile/CipVamLibrary/BasicNFP_Types.ecore"
+            class="CipVamprofile.CipVamLibrary.BasicNFP_Types.BasicNFP_TypesPackage"
+            genModel="bundles/es.unizar.disco.cycrisec.static.profile/resources/CipVamprofile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CIP_VAM -->
+      <package
+            uri="http:///CipVamprofile/CipVamLibrary/MARTE_DataTypes.ecore"
+            class="CipVamprofile.CipVamLibrary.MARTE_DataTypes.MARTE_DataTypesPackage"
+            genModel="bundles/es.unizar.disco.cycrisec.static.profile/resources/CipVamprofile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CIP_VAM -->
+      <package
+            uri="http:///CipVamprofile/CipVamLibrary/MARTE_PrimitivesTypes.ecore"
+            class="CipVamprofile.CipVamLibrary.MARTE_PrimitivesTypes.MARTE_PrimitivesTypesPackage"
+            genModel="bundles/es.unizar.disco.cycrisec.static.profile/resources/CipVamprofile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CIP_VAM -->
+      <package
+            uri="http:///CipVamprofile/CipVamLibrary/MeasurementUnits.ecore"
+            class="CipVamprofile.CipVamLibrary.MeasurementUnits.MeasurementUnitsPackage"
+            genModel="bundles/es.unizar.disco.cycrisec.static.profile/resources/CipVamprofile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CIP_VAM -->
+      <package
+            uri="http:///CipVamprofile/CipVamLibrary/StructuredDT.ecore"
+            class="CipVamprofile.CipVamLibrary.StructuredDT.StructuredDTPackage"
+            genModel="bundles/es.unizar.disco.cycrisec.static.profile/resources/CipVamprofile.genmodel"/>
+   </extension>
+
+</plugin>

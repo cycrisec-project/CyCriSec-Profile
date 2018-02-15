@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/es.unizar.disco.cycrisec.profile.feature_0.1.0.qualifier.jar" id="es.unizar.disco.cycrisec.profile.feature" version="0.1.0.qualifier">
+      <category name="Profiles"/>
+   </feature>
+   <category-def name="Profiles" label="Profiles"/>
+</site>
