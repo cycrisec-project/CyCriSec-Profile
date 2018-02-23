@@ -6,16 +6,6 @@
 
 <plugin>
 
-
-
-
-
-
-
-  
-
-
-
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated CipVamprofile -->
       <package
@@ -46,5 +36,44 @@
             uri="http:///CipVamprofile/CipVamLibrary/StructuredDT.ecore"
             class="CipVamprofile.CipVamLibrary.StructuredDT.StructuredDTPackage"
             genModel="resources/CipVamprofile.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://CYCRISEC_PROFILE/cipvam.profile.uml#_QpC9kO_DEeOyxvNpWIdzdw"
+            uri="http:///CipVamprofile.ecore">
+      </profile>
+      <profile
+            location="pathmap://CYCRISEC_PROFILE/cipvam.profile.uml#_dc1ZIO_DEeOyxvNpWIdzdw"
+            uri="http:///CipVamprofile/CipVamLibrary.ecore">
+      </profile>
+      <profile
+            location="pathmap://CYCRISEC_PROFILE/cipvam.profile.uml#_0iDBMO_DEeOyxvNpWIdzdw"
+            uri="http:///CipVamprofile/CipVamLibrary/GeometricDT.ecore">
+      </profile>
+      <profile
+            location="pathmap://CYCRISEC_PROFILE/cipvam.profile.uml#_63WWYO_DEeOyxvNpWIdzdw"
+            uri="http:///CipVamprofile/CipVamLibrary/StructuredDT.ecore">
+      </profile>
+      <profile
+            location="pathmap://CYCRISEC_PROFILE/cipvam.profile.uml#_wfCewO_DEeOyxvNpWIdzdw"
+            uri="http:///CipVamprofile/CipVamLibrary/BasicDT.ecore">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://CYCRISEC_PROFILE/"
+            target="platform:/plugin/es.unizar.disco.cycrisec.static.profile/resources">
+      </mapping>
+   </extension>
+      <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="CyCriSec Profile v1.0"
+            iconpath="icons/lock.gif"
+            name="CyCriSec"
+            path="pathmap://CYCRISEC_PROFILE/cipvam.profile.uml">
+      </profile>
    </extension>
 </plugin>

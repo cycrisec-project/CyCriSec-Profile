@@ -2,11 +2,11 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: es.unizar.disco.cycrisec.static.profile.tests;singleton:=true
-Bundle-Version: 0.1.0.qualifier
+Bundle-Version: 0.1.1.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Fragment-Host: es.unizar.disco.cycrisec.static.profile;bundle-version="0.1.0"
+Fragment-Host: es.unizar.disco.cycrisec.static.profile;bundle-version="0.1.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: CipVamprofile.CipVamLibrary.BasicDT.tests,
  CipVamprofile.CipVamLibrary.GeometricDT.tests,
